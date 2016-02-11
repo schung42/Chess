@@ -1,0 +1,165 @@
+\hypertarget{class_board}{}\section{Board Class Reference}
+\label{class_board}\index{Board@{Board}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_board_a514e9e5c80174d567fe5f1311b105a24}{get\+Width} ()
+\item 
+int \hyperlink{class_board_a89073052a738d3960b573a695e1aafed}{get\+Height} ()
+\item 
+void \hyperlink{class_board_a7860357debff0df2cad62b14305e7a99}{set\+Width} (int width)
+\item 
+void \hyperlink{class_board_a4690b660f6edd459c4f02f77dc551478}{set\+Height} (int height)
+\item 
+\hyperlink{class_piece}{Piece} \hyperlink{class_board_ad4228992ab9ea75d6e36546047971ace}{get\+Piece} (int x\+Coord, int y\+Coord)
+\item 
+void \hyperlink{class_board_a71ea4447e55dc3b152d5b5d3ea47fc9a}{set\+Piece} (\hyperlink{class_piece}{Piece} new\+Piece, int x\+Coord, int y\+Coord)
+\item 
+boolean \hyperlink{class_board_a4b0170c56fbe6bc4cea24d53c9666c5f}{check\+Piece\+On\+Board} (int x\+Coord, int y\+Coord)
+\item 
+void \hyperlink{class_board_abd1044868608621ab830d8e2dfaaf799}{remove\+Piece} (int x\+Coord, int y\+Coord)
+\item 
+\hypertarget{class_board_aea5a90bdae0d9b4c25441cc08bc2ac64}{}void {\bfseries replace\+Piece} (int to\+X, int to\+Y, \hyperlink{class_piece}{Piece} piece)\label{class_board_aea5a90bdae0d9b4c25441cc08bc2ac64}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_board_a2f9e52c8f83e21be433bb3a323834595}{}int {\bfseries width}\label{class_board_a2f9e52c8f83e21be433bb3a323834595}
+
+\item 
+\hypertarget{class_board_adbbf79735f96938460ee9bd4056ced62}{}int {\bfseries height}\label{class_board_adbbf79735f96938460ee9bd4056ced62}
+
+\item 
+\hypertarget{class_board_aa29961b0c52a6744018ff6060bd3c116}{}\hyperlink{class_piece}{Piece}\mbox{[}$\,$\mbox{]}\mbox{[}$\,$\mbox{]} {\bfseries piece} = new \hyperlink{class_piece}{Piece}\mbox{[}8\mbox{]}\mbox{[}8\mbox{]}\label{class_board_aa29961b0c52a6744018ff6060bd3c116}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_board_a4b0170c56fbe6bc4cea24d53c9666c5f}{}\index{Board@{Board}!check\+Piece\+On\+Board@{check\+Piece\+On\+Board}}
+\index{check\+Piece\+On\+Board@{check\+Piece\+On\+Board}!Board@{Board}}
+\subsubsection[{check\+Piece\+On\+Board}]{\setlength{\rightskip}{0pt plus 5cm}boolean Board.\+check\+Piece\+On\+Board (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+Coord, }
+\item[{int}]{y\+Coord}
+\end{DoxyParamCaption}
+)}\label{class_board_a4b0170c56fbe6bc4cea24d53c9666c5f}
+Check if a piece exists on board at coordinate
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Coord} & \\
+\hline
+{\em y\+Coord} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_board_a89073052a738d3960b573a695e1aafed}{}\index{Board@{Board}!get\+Height@{get\+Height}}
+\index{get\+Height@{get\+Height}!Board@{Board}}
+\subsubsection[{get\+Height}]{\setlength{\rightskip}{0pt plus 5cm}int Board.\+get\+Height (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_board_a89073052a738d3960b573a695e1aafed}
+Retrieve the height of the board \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_board_ad4228992ab9ea75d6e36546047971ace}{}\index{Board@{Board}!get\+Piece@{get\+Piece}}
+\index{get\+Piece@{get\+Piece}!Board@{Board}}
+\subsubsection[{get\+Piece}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Piece} Board.\+get\+Piece (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+Coord, }
+\item[{int}]{y\+Coord}
+\end{DoxyParamCaption}
+)}\label{class_board_ad4228992ab9ea75d6e36546047971ace}
+Return the piece at this coordinate
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Coord} & \\
+\hline
+{\em y\+Coord} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_board_a514e9e5c80174d567fe5f1311b105a24}{}\index{Board@{Board}!get\+Width@{get\+Width}}
+\index{get\+Width@{get\+Width}!Board@{Board}}
+\subsubsection[{get\+Width}]{\setlength{\rightskip}{0pt plus 5cm}int Board.\+get\+Width (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_board_a514e9e5c80174d567fe5f1311b105a24}
+Retrieve the width of the board \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{class_board_abd1044868608621ab830d8e2dfaaf799}{}\index{Board@{Board}!remove\+Piece@{remove\+Piece}}
+\index{remove\+Piece@{remove\+Piece}!Board@{Board}}
+\subsubsection[{remove\+Piece}]{\setlength{\rightskip}{0pt plus 5cm}void Board.\+remove\+Piece (
+\begin{DoxyParamCaption}
+\item[{int}]{x\+Coord, }
+\item[{int}]{y\+Coord}
+\end{DoxyParamCaption}
+)}\label{class_board_abd1044868608621ab830d8e2dfaaf799}
+Set the piece at this X\+Y coordinate to be null
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+Coord} & \\
+\hline
+{\em y\+Coord} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_board_a4690b660f6edd459c4f02f77dc551478}{}\index{Board@{Board}!set\+Height@{set\+Height}}
+\index{set\+Height@{set\+Height}!Board@{Board}}
+\subsubsection[{set\+Height}]{\setlength{\rightskip}{0pt plus 5cm}void Board.\+set\+Height (
+\begin{DoxyParamCaption}
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)}\label{class_board_a4690b660f6edd459c4f02f77dc551478}
+Set the height of the board 
+\begin{DoxyParams}{Parameters}
+{\em height} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_board_a71ea4447e55dc3b152d5b5d3ea47fc9a}{}\index{Board@{Board}!set\+Piece@{set\+Piece}}
+\index{set\+Piece@{set\+Piece}!Board@{Board}}
+\subsubsection[{set\+Piece}]{\setlength{\rightskip}{0pt plus 5cm}void Board.\+set\+Piece (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece}}]{new\+Piece, }
+\item[{int}]{x\+Coord, }
+\item[{int}]{y\+Coord}
+\end{DoxyParamCaption}
+)}\label{class_board_a71ea4447e55dc3b152d5b5d3ea47fc9a}
+Placing a piece on the board at a coordinate
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Piece} & \\
+\hline
+{\em x\+Coord} & \\
+\hline
+{\em y\+Coord} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_board_a7860357debff0df2cad62b14305e7a99}{}\index{Board@{Board}!set\+Width@{set\+Width}}
+\index{set\+Width@{set\+Width}!Board@{Board}}
+\subsubsection[{set\+Width}]{\setlength{\rightskip}{0pt plus 5cm}void Board.\+set\+Width (
+\begin{DoxyParamCaption}
+\item[{int}]{width}
+\end{DoxyParamCaption}
+)}\label{class_board_a7860357debff0df2cad62b14305e7a99}
+Set the width of the board 
+\begin{DoxyParams}{Parameters}
+{\em width} & \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/Board.\+java\end{DoxyCompactItemize}
